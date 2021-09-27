@@ -60,3 +60,4 @@ buck-out/
 
 # e.t.c
 yarn.lock
+ios/tsNativeApp.xcodeproj/project.pbxproj
