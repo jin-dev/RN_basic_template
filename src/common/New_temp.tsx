@@ -3,8 +3,7 @@ import {Text, View, Image} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 
 const NewTemp = (props: any) => {
-
-    const [ value, setValue ] = useState(Math.random()* 500);
+  const [value, setValue] = useState(Math.random() * 500);
 
   return (
     <View
@@ -27,40 +26,40 @@ const NewTemp = (props: any) => {
         />
       </View>
 
-      <View style={{
-               width:"65%",
-               justifyContent:"flex-end",
-               paddingHorizontal:10,
-               height:"100%"
-           }}>
-               <Text style={{
-                   fontSize:8,
-                
-
-               }}>
-                   some description.....
-               </Text>
-               <Text style={{
-                   fontSize:11,
-                  
-               }}>
-                   {`$ ${value.toFixed(2)}`}
-               </Text>
-
-           </View>
-           <View style={{
-               width:"5%",
-               justifyContent:"flex-end",
-               height:"100%"
-           }}>
-               <Image
-                source={require('../assets/images/add.png')}
-                style={{
-                    height:17,
-                    width:17
-                }}
-               />
-           </View>
+      <View
+        style={{
+          width: '65%',
+          justifyContent: 'flex-end',
+          paddingHorizontal: 10,
+          height: '100%',
+        }}>
+        <Text
+          style={{
+            fontSize: 8,
+          }}>
+          some description.....
+        </Text>
+        <Text
+          style={{
+            fontSize: 11,
+          }}>
+          {`$ ${value.toFixed(2)}`}
+        </Text>
+      </View>
+      <View
+        style={{
+          width: '5%',
+          justifyContent: 'flex-end',
+          height: '100%',
+        }}>
+        <Image
+          source={require('../assets/images/add.png')}
+          style={{
+            height: 17,
+            width: 17,
+          }}
+        />
+      </View>
     </View>
   );
 };
