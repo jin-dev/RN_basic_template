@@ -4,7 +4,7 @@ import {View, Text} from 'react-native';
 import {ScrollView} from 'react-native-gesture-handler';
 import CouchesTemp from '../common/Couches_temp';
 import NewTemp from '../common/New_temp';
-
+import Best from '../common/Best_Seller_temp';
 export default function Notifications({navigation}) {
   return (
     <ScrollView
@@ -99,6 +99,27 @@ export default function Notifications({navigation}) {
         <NewTemp src={require('../assets/images/sofa.png')} />
         <NewTemp src={require('../assets/images/lr.png')} />
         <NewTemp src={require('../assets/images/sofa.png')} />
+      </ScrollView>
+
+
+          <Text style={{
+            marginTop:20,
+            color: "#4f4a4a",
+            fontSize: 18,
+            
+          }}> Best Seller </Text>
+
+
+      <ScrollView
+        showsHorizontalScrollIndicator={false}
+        horizontal>
+
+
+          <Best />
+          <Best />
+          <Best />
+
+
       </ScrollView>
     </ScrollView>
   );

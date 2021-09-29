@@ -11,11 +11,13 @@ import {StatusBar} from 'react-native';
 
 import {NavigationContainer} from '@react-navigation/native';
 
+
 import {Provider} from 'react-redux';
 import {store} from './store';
 import DrawerNavigator from './navigation/DrawerNavigator';
 
 const App = () => {
+
   return (
     <Provider store={store}>
       <StatusBar barStyle="dark-content" />

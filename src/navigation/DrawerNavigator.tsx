@@ -5,14 +5,13 @@ import { View, Text, Image} from 'react-native';
 import { TextInput } from 'react-native-gesture-handler';
 import {MainStackNavigator} from './StackNavigator';
 import BottomTabNavigator from './TabNavigator';
+import Icon from 'react-native-vector-icons/AntDesign';
 
 const Drawer = createDrawerNavigator();
 
 
 function LogoTitle() {
   return (
-    
-
     <View style={{
       flexDirection:"row",
       alignItems:"center",
@@ -47,17 +46,13 @@ function LogoTitle() {
                   elevation:2,
                   width:"15%",
                   backgroundColor:"#FFF",
-                  marginLeft:45,
+                  marginLeft:60,
                   height:35,
                   borderRadius:10,
                   justifyContent:"center"
               }}>
-                  <Image
-                  source={require('../assets/images/sort.png')}
-                  style={{
-                      width:18,height:25
-                  }}
-                  />
+                  
+                   <Icon name="login" size={30}/>
               </View>
      
   </View>
