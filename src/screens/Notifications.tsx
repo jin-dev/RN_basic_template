@@ -1,11 +1,12 @@
 /* eslint-disable react-native/no-inline-styles */
-import React from 'react';
+import React, {useEffect} from 'react';
 import {View, Text} from 'react-native';
 import {ScrollView} from 'react-native-gesture-handler';
 import CouchesTemp from '../common/Couches_temp';
 import NewTemp from '../common/New_temp';
 import Best from '../common/Best_Seller_temp';
 export default function Notifications({navigation}) {
+  
   return (
     <ScrollView
       showsVerticalScrollIndicator={false}
